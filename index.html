@@ -5,9 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="resource/favicon.ico" type="image/x-icon">
+    
     <title>Weather</title>
 </head>
 <body>
-    
+     <nav>
+        <img src="/resource/favicon.ico" alt="icon">
+        <h1>El tiempo</h1>
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+     </nav>
+     <header>
+        <div class="place">
+            <h1 id="location_province">error</h1>
+            <h2 id="location">error</h2>
+            <h3 id="date">error</h3>
+        </div>
+        <div class="weather">
+            <div class="grades">
+                <div id="grades_now"></div>
+                <div id="termic_sensation">
+                    <div class="icon_general">
+                        <img src="/resource/information_weather/temperature-sun-svgrepo-com.svg" alt="termic sensation">
+                    </div>
+                </div>
+                <div class="max-min">
+                    <div id="grades_min">
+                        <div class="icon_general">
+                            <img src="/resource/information_weather/temperature-arrow-down-svgrepo-com.svg" alt="min temperature">
+                        </div>
+                    </div>
+                    <div id="grades_max">
+                        <div class="icon_general">
+                            <img src="/resource/information_weather/temperature-arrow-up-svgrepo-com.svg" alt="max temperature">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="state">
+                <div id="weather_state">
+                    <img id="state" src="" alt="estados_tiempo">
+                </div>
+                <p id="weather_description">
+                    soleado
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info_data">
+                <img src="/resource/information_weather/warning-alert-bad-svgrepo-com.svg" alt="prob lluvia">
+                <p id="prob_lluvia">Prob. lluvia: 15%</p>
+            </div>
+            <div class="info_data">
+                <img src="/resource/information_weather/droplet-degree-svgrepo-com.svg" alt="prob lluvia">
+                <p id="lluvia">Lluvia: 0 l/m2</p>
+            </div>
+            <div class="info_data">
+                <img src="/resource/information_weather/umbrella-svgrepo-com.svg" alt="prob lluvia">
+                <p id="humedad">Humedad: 35%</p>
+            </div>
+            <div class="info_data">
+                <img src="/resource/information_weather/wind-storm-strong-svgrepo-com.svg" alt="prob lluvia">
+                <p id="viento">Viento: 10  SO</p>
+            </div>
+            <div class="info_data">
+                <img src="/resource/information_weather/uv-ray-warning-svgrepo-com.svg" alt="uv max">
+                <p id="uv">Viento: 10  SO</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info_data">
+                <img src="/resource/information_weather/sunrise-svgrepo-com.svg" alt="sunrise">
+                <p id="sunrise">error</p>
+            </div>
+            <div class="info_data">
+                <img src="/resource/information_weather/sunset-svgrepo-com.svg" alt="sunset">
+                <p id="sunset">error</p>
+            </div>
+        </div>
+     </header>
+     <article></article>
+     <footer></footer>   
+<script src="/resource/components/api.js"></script>
+<script src="/resource/components/date.js"></script>
 </body>
 </html>
