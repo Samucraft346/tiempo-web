@@ -48,6 +48,10 @@ async function fetchData() {
     const weather_state = data.pronostico.hoy.estado_cielo_descripcion[indiceCoincidencia]
     const weather_state_description = data.pronostico.hoy.estado_cielo_descripcion[indiceCoincidencia]
     switch (true) {
+      case weather_state === 'Nuboso':
+        document.getElementById('state').setAttribute('src', '/resource/estados_tiempo/nublado.png');
+        document.getElementById('weather_description').textContent = weather_state_description;
+      break
       case weather_state === 'Despejado':
         document.getElementById('state').setAttribute('src', '/resource/estados_tiempo/sol.png');
         document.getElementById('weather_description').textContent = weather_state_description;

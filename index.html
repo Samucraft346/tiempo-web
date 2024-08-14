@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="resource/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="resource/favicon.png" type="image/x-icon">
     
     <title>Weather</title>
 </head>
 <body>
      <nav>
-        <img src="/resource/favicon.ico" alt="icon">
+        <img src="/resource/favicon.png" alt="icon">
         <h1>El tiempo</h1>
         <label class="burger" for="burger">
             <input type="checkbox" id="burger">
@@ -88,7 +88,43 @@
             </div>
         </div>
      </header>
-     <article></article>
+     <article>
+        <main>
+            <table class="for-hour-table">
+                <thead class="for-hour-table-head">
+                    <tr class="for-hour-table-head-item">
+                        <th class="for-hour-table-head-item-cell">14:00</th>                </thead>
+                <tbody class="for-hour-table-body">
+                    <tr class="for-hour-table-body-item" id="table-weather">
+                        <th class="for-hour-table-body-item-cell">
+                            <img src="/resource/estados_tiempo/lluvia.png" alt="lluvia">
+                        </th>
+                    </tr>
+                    <tr class="for-hour-table-body-item" id="table-temperature">
+                        <th class="for-hour-table-body-item-cell">24 ºC</th>
+                    </tr>
+                    <tr class="for-hour-table-body-item" id="table-humidity">
+                        <th class="for-hour-table-body-item-cell">
+                            <img src="/resource/information_weather/umbrella-svgrepo-com.svg" alt="humidity">
+                            0%
+                        </th>
+                    </tr>
+                    <tr class="for-hour-table-body-item" id="table-rain">
+                        <th class="for-hour-table-body-item-cell">
+                            <img src="/resource/information_weather/droplet-degree-svgrepo-com.svg" alt="humidity">
+                            0                           
+                        </th>
+                    </tr>
+                    <tr class="for-hour-table-body-item" id="table-wind">
+                        <th class="for-hour-table-body-item-cell">
+                            <img src="/resource/information_weather/wind-storm-strong-svgrepo-com.svg" alt="humidity">
+                            17 km/h SO                          
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+     </article>
      <footer></footer>   
 <script src="/resource/components/api.js"></script>
 <script src="/resource/components/date.js"></script>
