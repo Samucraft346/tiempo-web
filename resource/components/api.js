@@ -1,5 +1,6 @@
+const url = 'https://www.el-tiempo.net/api/json/v2/provincias/19/municipios/19001';
+
 async function fetchData() {
-  const url = 'https://www.el-tiempo.net/api/json/v2/provincias/19/municipios/19001';
   const options = {
     method: 'GET',
   };
